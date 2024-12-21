@@ -1,20 +1,11 @@
-let message;
+var myOtherAge = 25;
 
-message = "Hello World";
+var myAge = myOtherAge;
 
-console.log(message);
+let hourly = 15;
 
-let user = "Ryan",
-  age = 25,
-  message1 = message;
+let hours = 11;
 
-let myName;
+let hourlyCalc = hourly * hours;
 
-let messages;
-myName = "Hello Ryan";
-
-messages = myName;
-
-console.log(myName, messages);
-
-// console.log(user, age, message1);
+console.log(hourlyCalc);
