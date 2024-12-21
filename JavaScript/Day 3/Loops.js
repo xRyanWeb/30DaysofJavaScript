@@ -29,6 +29,7 @@ for (let x in myCars) {
 let num = 2 + 9 / 2;
 
 let i = 0;
+
 while (i == 0) {
   console.log("Num: " + num + "\n");
   i += 1;
