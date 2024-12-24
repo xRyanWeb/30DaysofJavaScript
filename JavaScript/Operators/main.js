@@ -1,31 +1,36 @@
-let firstName = "Ryan";
-let lastName = "James";
+function generatedColor() {
+  let colors = ["red", "green", "blue"];
 
-let fullName = firstName + " " + lastName;
+  colors.map(e => {
+    const randomColor = Math.floor(Math.random() * colors.length[e]);
 
-console.log(fullName);
+    let color = colors[randomColor];
+    return color;
+  });
 
-let val1 = 2;
-let val2 = 2;
-// console.log(val1);
-let val = val2 + 2;
-// console.log(val1);
-// val1 = val1 * 10;
-// console.log(val1);
-// val1 = val1 + "20";
+  const randomColor = Math.floor(Math.random() * colors.length);
+  return colors[randomColor];
+}
 
-let equals1;
-let equals2;
+const color = generatedColor();
 
-// equals1 = val1 != 0;
-// equals2 = val2 != 0;
-// let equals1 = val2 == 2;
-// let equals2 = val == 4;
+if (color == "red") {
+  let redButton = document.getElementById("redButton");
+  redButton.addEventListener("click", () => {
+    document.body.style.backgroundColor = color;
+  });
+}
 
-// equals1 = val > 2;
-// equals2 = val1 >= 2;
-equals1 = val1 <= 2;
-equals2 = val2 < 2;
+if (color == "green") {
+  let greenButton = document.getElementById("greenButton");
+  greenButton.addEventListener("click", () => {
+    document.body.style.backgroundColor = color;
+  });
+}
 
-console.log(equals1);
-console.log(equals2);
+if (color == "blue") {
+  let blueButton = document.getElementById("blueButton");
+  blueButton.addEventListener("click", () => {
+    document.body.style.backgroundColor = color;
+  });
+}
